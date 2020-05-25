@@ -1,6 +1,6 @@
 <template>
     <div class="p-3 bg-white shadow rounded-lg">
-        <input type="file" name="image" accept="image/*" @change="setImage" data-toggle="modal" data-target="#exampleModal"/>
+        <input id="file-input" type="file" name="image" accept="image/*" @change="setImage" data-toggle="modal" data-target="#exampleModal"/>
 
         <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-lg" role="document">

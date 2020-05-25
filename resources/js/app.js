@@ -19,8 +19,6 @@ window.Vue = require('vue');
 // const files = require.context('./', true, /\.vue$/i)
 // files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default))
 
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
-Vue.component('modal', require('./components/ModalComponent.vue').default);
 Vue.component('crop-upload', require('./components/CropUploadComponent.vue').default);
 
 /**
@@ -31,7 +29,4 @@ Vue.component('crop-upload', require('./components/CropUploadComponent.vue').def
 
 const app = new Vue({
     el: '#app',
-    data: {
-        showModal: false,
-    }
 });
